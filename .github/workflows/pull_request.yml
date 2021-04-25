@@ -18,8 +18,8 @@ jobs:
       - name: Install Packages
         run: yarn install
         
-      - name: Eslint
-        run: yarn lint
-
-      - name: compile
-        run: yarn compile
+#      - name: Eslint
+#        run: yarn lint
+#
+#      - name: compile
+#        run: yarn compile
