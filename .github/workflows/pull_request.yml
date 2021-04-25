@@ -1,0 +1,25 @@
+name: Auto Testing
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 'v14.16.0'
+
+      - name: Install Packages
+        run: yarn install
+        
+#      - name: Eslint
+#        run: yarn lint
+#
+#      - name: compile
+#        run: yarn compile
