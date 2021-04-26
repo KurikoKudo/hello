@@ -3,6 +3,11 @@ name: Deploy Heroku
 on:
   push:
     branches: [ main ]
+    paths:
+      - "src/**"
+      - "view/**"
+      - "package.json"
+      - "Procfile"
 
 jobs:
   build:
